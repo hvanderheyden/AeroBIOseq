@@ -3,11 +3,11 @@ project:
   output-dir: docs
 
 website: 
-  title: AeroBIOseq
-  description: A website built with Quarto
+  title: "AeroBIOseq"
   navbar:
     title: AeroBIOseq
     href: index.qmd
+    logo: images/logo_icone.svg
     left:
       - text: Projet
         href: Project.qmd      
@@ -24,10 +24,10 @@ website:
         href: mailto:herve.vanderheyden@agr.gc.ca
   page-footer:
     left: "© 2026 Hervé Van Der Heyden"
-    
+
 format:
   html:
-    theme: [flatly, custom.scss]
+    theme: [flatly]
     css: styles.css
     toc: TRUE
     toc_float:
