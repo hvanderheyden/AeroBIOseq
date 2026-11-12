@@ -1,0 +1,36 @@
+project: 
+  type: website
+  output-dir: docs
+
+website: 
+  title: AeroBIOseq
+  description: A website built with Quarto
+  navbar:
+    title: AeroBIOseq
+    href: index.qmd
+    left:
+      - text: Projet
+        href: Project.qmd      
+      - text: Équipe
+        href: Team.qmd 
+      - text: Étudiants
+        href: Students.qmd
+      - text: Diffusion
+        href: News.qmd
+    right:
+      - icon: github
+        href: https://github.com/hvanderheyden/AeroBIOseq
+      - icon: envelope
+        href: mailto:herve.vanderheyden@agr.gc.ca
+  page-footer:
+    left: "© 2026 Hervé Van Der Heyden"
+    
+format:
+  html:
+    theme: [flatly, custom.scss]
+    css: styles.css
+    toc: TRUE
+    toc_float:
+      collapsed: TRUE
+    toc-depth: 4
+    page-layout: article
